@@ -38,8 +38,6 @@ public class LoginPageObjects {
 
 	public void ButtonLogin() throws InterruptedException {
 		Thread.sleep(1000);
-		String url=driver.getCurrentUrl();
-		System.out.println("Current url before login"+url);
 		driver.findElement(button_login).click();	
 	}
 	public void ButtonAppMenu() throws InterruptedException {
@@ -49,12 +47,10 @@ public class LoginPageObjects {
 	public void ButtonLogOut() throws InterruptedException {
 		
 		Thread.sleep(1000);
-		String url=driver.getCurrentUrl();
-		System.out.println("Current url before logout"+url);
 		
 		driver.findElement(button_LogOut).click();
 		Thread.sleep(1000);
 		
-		driver.close();
+
 	}
 }
